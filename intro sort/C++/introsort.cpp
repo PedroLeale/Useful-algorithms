@@ -100,7 +100,8 @@ int* Partition(int arr[], int low, int high){
 
 // A function that find the middle of the
 // values pointed by the pointers a, b, c
-// and return that pointer
+// and return that pointer.
+// This function will leave some warnings
 int* MedianOfThree(int* a, int* b, int* c){
     if (*a < *b && *b < *c)
         return (b);
@@ -119,6 +120,7 @@ int* MedianOfThree(int* a, int* b, int* c){
  
     if (*c <= *b && *b <= *a)
         return (b);
+
 }
 
 void swapValue(int* a, int* b){
